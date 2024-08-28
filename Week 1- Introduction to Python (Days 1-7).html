@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Introduction to Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0073e6;
+        }
+
+        h2 {
+            color: #0073e6;
+            margin-top: 20px;
+        }
+
+        .day {
+            margin-bottom: 20px;
+        }
+
+        .day h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .day ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .task, .example, .exercise {
+            margin-bottom: 10px;
+        }
+
+        .code {
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            color: white;
+            border-radius: 50;
+        }
+
+        .footer {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+        }
+    
+        .footer-content {
+            margin-bottom: 10px;
+        }
+    
+        .linkedin-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .linkedin-link:hover {
+            text-decoration: underline;
+        }
+    
+        hr {
+            border: none;
+            border-top: 1px solid #fff;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Week 1: Introduction to Python (Days 1-7)</h1>
+
+    <!-- Day 1 -->
+    <div class="day">
+        <h2>Day 1: Introduction to Python, Installing Python, Setting Up the Environment</h2>
+        <ul>
+            <li class="task">Understand what Python is and its usefulness in DevOps.</li>
+            <li class="task">Install Python from the official website.</li>
+            <li class="task">Set up a Python development environment using a text editor or IDE.</li>
+            <li class="task">Create a simple Python script to test the setup.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                print("Hello, Python for DevOps!")
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Write a script that prints your name and a message about why you are learning Python.
+            <div class="code">
+                # Example solution
+                print("My name is [Your Name] and I'm learning Python for DevOps to automate tasks!")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day">
+        <h2>Day 2: Basic Syntax, Variables, and Data Types</h2>
+        <ul>
+            <li class="task">Learn the basic syntax and how Python code is structured.</li>
+            <li class="task">Understand variables and different data types (integers, floats, strings, booleans).</li>
+            <li class="task">Practice with a script to store and print various data types.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                name = "DevOps Engineer"<br>
+                age = 25<br>
+                pi = 3.14159<br>
+                is_learning = True<br>
+                print(f"Name: {name}, Age: {age}, Pi: {pi}, Learning Python: {is_learning}")
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Create variables to store your favorite color, number, and a boolean value indicating if you like Python. Print these values.
+            <div class="code">
+                # Example solution
+                favorite_color = "Blue"<br>
+                favorite_number = 7<br>
+                likes_python = True<br>
+                print(f"Favorite Color: {favorite_color}, Favorite Number: {favorite_number}, Likes Python: {likes_python}")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day">
+        <h2>Day 3: String Manipulation and Formatting</h2>
+        <ul>
+            <li class="task">Explore string operations like concatenation, slicing, and methods.</li>
+            <li class="task">Learn different ways to format strings for output.</li>
+            <li class="task">Write scripts using string formatting and manipulation.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                name = " DevOps Engineer "<br>
+                print(name.strip().upper())<br>
+                print(name.replace("DevOps", "Cloud"))<br>
+                greeting = "Hello, {}!".format("world")<br>
+                f_greeting = f"Hello, {name.strip()}!"<br>
+                print(greeting)<br>
+                print(f_greeting)
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Ask the user for their name and age, and print a message using both the `format()` method and f-strings.
+            <div class="code">
+                # Example solution
+                name = input("Enter your name: ")<br>
+                age = input("Enter your age: ")<br>
+                print("Your name is {} and you are {} years old.".format(name, age))<br>
+                print(f"Your name is {name} and you are {age} years old.")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day">
+        <h2>Day 4: Basic Operators (Arithmetic, Comparison, Logical)</h2>
+        <ul>
+            <li class="task">Understand and use arithmetic operators.</li>
+            <li class="task">Learn about comparison and logical operators.</li>
+            <li class="task">Write scripts that perform calculations and logical checks.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                a = 10<br>
+                b = 3<br>
+                print(a + b, a - b, a * b, a / b, a ** b, a % b)<br>
+                print(a > b, a == b, a != b)<br>
+                is_python = True<br>
+                is_java = False<br>
+                print(is_python and is_java, is_python or is_java, not is_java)
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Write a script that takes two numbers from the user, compares them, and prints out which one is larger or if they are equal.
+            <div class="code">
+                # Example solution
+                num1 = int(input("Enter the first number: "))<br>
+                num2 = int(input("Enter the second number: "))<br>
+                if num1 > num2:<br>
+                    &emsp;print("The first number is larger.")<br>
+                elif num1 < num2:<br>
+                    &emsp;print("The second number is larger.")<br>
+                else:<br>
+                    &emsp;print("Both numbers are equal.")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day">
+        <h2>Day 5: Input and Output Functions</h2>
+        <ul>
+            <li class="task">Learn how to take input from the user using the input() function.</li>
+            <li class="task">Understand how to display output using the print() function.</li>
+            <li class="task">Write scripts that interact with the user and display results.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                name = input("What is your name? ")<br>
+                age = int(input("What is your age? "))<br>
+                print(f"Hello {name}, you are {age} years old.")
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Write a script that asks for the user's name, age, and favorite number, then prints out a formatted message with this information.
+            <div class="code">
+                # Example solution
+                name = input("Enter your name: ")<br>
+                age = input("Enter your age: ")<br>
+                favorite_number = input("Enter your favorite number: ")<br>
+                print(f"Hello {name}, you are {age} years old and your favorite number is {favorite_number}.")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day">
+        <h2>Day 6: Lists, Tuples, and Sets</h2>
+        <ul>
+            <li class="task">Learn how to create and use lists, tuples, and sets.</li>
+            <li class="task">Practice adding, removing, and accessing elements in these data structures.</li>
+            <li class="task">Write scripts to manipulate and process collections of data.</li>
+        </ul>
+        <div class="example">
+            <strong>Example Code:</strong>
+            <div class="code">
+                fruits = ["apple", "banana", "cherry"]<br>
+                fruits.append("orange")<br>
+                print(fruits)<br>
+                print(fruits[1])<br><br>
+                
+                veggies = ("carrot", "broccoli", "spinach")<br>
+                print(veggies)<br><br>
+                
+                colors = {"red", "blue", "green"}<br>
+                colors.add("yellow")<br>
+                print(colors)
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise:</strong> Create a list of your favorite foods, add a new food to the list, and then print the list. Do the same for a tuple of favorite drinks and a set of favorite sports.
+            <div class="code">
+                # Example solution<br>
+                favorite_foods = ["pizza", "sushi", "tacos"]<br>
+                favorite_foods.append("pasta")<br>
+                print(f"Favorite Foods: {favorite_foods}")<br><br>
+                
+                favorite_drinks = ("coffee", "tea", "juice")<br>
+                print(f"Favorite Drinks: {favorite_drinks}")<br><br>
+                
+                favorite_sports = {"football", "basketball", "tennis"}<br>
+                favorite_sports.add("volleyball")<br>
+                print(f"Favorite Sports: {favorite_sports}")
+            </div>
+        </div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="day">
+        <h2>Day 7: Practice Problems and Review</h2>
+        <ul>
+            <li class="task">Review all topics covered during the week.</li>
+            <li class="task">Solve practice problems to reinforce the concepts.</li>
+            <li class="task">Identify challenging areas and revisit those topics for better understanding.</li>
+        </ul>
+        <div class="exercise">
+            <strong>Exercise 1:</strong> Write a script that calculates the area of a rectangle. Take input from the user for width and height.
+            <div class="code">
+                # Example solution<br>
+                width = float(input("Enter the width of the rectangle: "))<br>
+                height = float(input("Enter the height of the rectangle: "))<br>
+                area = width * height<br>
+                print(f"The area of the rectangle is {area}.")
+            </div>
+        </div>
+        <div class="exercise">
+            <strong>Exercise 2:</strong> Create a list of numbers, then write a script to calculate the sum and average of the numbers in the list.
+            <div class="code">
+                # Example solution<br>
+                numbers = [10, 20, 30, 40, 50]<br>
+                total = sum(numbers)<br>
+                average = total / len(numbers)<br>
+                print(f"Sum: {total}, Average: {average}")
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="footer-content">
+            <strong>Zeeshan Akram</strong><br>
+            <a href="https://www.linkedin.com/in/xeeshan-akram/" target="_blank" class="linkedin-link">Connect on LinkedIn</a>
+        </div>
+        <hr>
+    </div>
+    
+</div>
+
+</body>
+</html>
